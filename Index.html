@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalized.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <title>Office Productivity Solutions</title>
 </head>
@@ -62,17 +62,17 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="display-4"">Let’s make great things</h2>
                     <p class="lead">Bringing innovative experience to the world adopting digital transformation in this fast-paced growing industry.</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <form>
-                        <div class="input-group">
-                            <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
-                            <input type="email" class="form-control getStarted-email-text-field" id="email" name="Email" placeholder="Your Email">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary mb-2">Get Started</button>
-                            </span>
+                        <div class="d-flex justify-content-center">
+                            <form>
+                                <div class="input-group">
+                                    <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
+                                    <input type="email" class="form-control getStarted-email-text-field" class="email" name="Email" placeholder="Your Email">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary mb-2">Get Started</button>
+                                    </span>
+                                </div>
+                            </form>
                         </div>
-                    </form>
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -80,17 +80,17 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="display-4">Leave the thinking to us</h2>
                     <p class="lead">We redefine the way companies drive new markets, grow brands, and maximize market share.</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <form>
-                        <div class="input-group">
-                            <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
-                            <input type="email" class="form-control getStarted-email-text-field" id="email" name="Email" placeholder="Your Email">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary mb-2">Get Started</button>
-                            </span>
+                        <div class="d-flex justify-content-center">
+                            <form>
+                                <div class="input-group">
+                                    <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
+                                    <input type="email" class="form-control getStarted-email-text-field" class="email" name="Email" placeholder="Your Email">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary mb-2">Get Started</button>
+                                    </span>
+                                </div>
+                            </form>
                         </div>
-                    </form>
                 </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -98,17 +98,17 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="display-4">Break the norms and perform beyond expectations</h2>
                     <p class="lead">We use technology and great ideas to minimize operational costs and achieve business growth.</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <form>
-                        <div class="input-group">
-                            <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
-                            <input type="email" class="form-control getStarted-email-text-field" id="email" name="Email" placeholder="Your Email">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary mb-2">Get Started</button>
-                            </span>
-                        </div>
-                    </form>
+                    <div class="d-flex justify-content-center">
+                        <form>
+                            <div class="input-group">
+                                <i class="fa fa-envelope-o icon" style="border-radius: 5px 0px 0px 5px;"></i>
+                                <input type="email" class="form-control getStarted-email-text-field" class="email" name="Email" placeholder="Your Email">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary mb-2">Get Started</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
   
   <!-- Page Content -->
   <main id="main">
-    <section>
+    <section id="aboutID">
         <div class="content-main">
         <h1 class="display-main">About Us</h1>
         </div>
@@ -136,17 +136,42 @@
                 <div class="row">
             
                 <div class="col-md-8">
-                    <img class="img-fluid" src="img/1.jpg" alt="">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="img/1.jpg" alt="" style="width:100%;">
+                          </div>
+                    
+                          <div class="item">
+                            <img src="img/2.jpg" alt="" style="width:100%;">
+                          </div>
+                        
+                          <div class="item">
+                            <img src="img/3.jpg" alt="" style="width:100%;">
+                          </div>
+                        </div>
+
+                </div>
                 </div>
             
                 <div class="col-md-4">
-                    In 2008, we set out to make great things and built an organization to foster greatness.
+                   <p style="padding: 30px 15px;"> In 2008, we set out to make great things and built an organization to foster greatness.
                     <br><br>
                     We are a community where talented individuals are empowered to put their best ideas and work into the world. We maintain a work environment that fosters personal and professional growth.
                     <br><br>
                     As a business builder, we operate exactly as fast as businesses manage to grow by steering towards opportunities and away from risks. Our organization is full of young passionate innovators maintaining an environment to flourish.
                     <br><br>
                     We are in charge and we are committed to growth.
+                   </p>
+                    <button type="button" class="btn btn-lg">Read More</button>
                 </div>
                 </div>
             <div >
@@ -158,38 +183,219 @@
     <section id="ourMission">
         <div class="container-std md-30" style="color: black; height: 100%;">
             <header class="header-about">
-                <h3>OUR MISSION</h3>
+                <h3>Our Mission</h3>
                 <p>We serve as the bridge between businesses and technology. We provide expertise and service excellence that improves productivity and effectivity.</p>
             </header>
-
-            <div class="mission-list col-md-3">
-                <img src="/img/Digitize.png" alt="">
-                <h4>Digitize</h4>
-                <p>Simplifying operations through digital enablement tools for teams to become more efficient and effective.</p>
+            <div class="row">
+                <div class="mission-list col-md-3">
+                    <img src="/img/Digitize.png" alt="">
+                    <h4>Digitize</h4>
+                    <p>Simplifying operations through digital enablement tools for teams to become more efficient and effective.</p>
+                </div>
+                <div class="mission-list col-md-3">
+                    <img src="/img/Transform.png" alt="">
+                    <h4>Transform</h4>
+                    <p>Integrating systems and transforming data to provide deep context for the business.</p>
+                </div>
+                <div class="mission-list col-md-3">
+                    <img src="/img/Store.png" alt="">
+                    <h4>Store</h4>
+                    <p>Scaling up businesses by using advanced technologies placing data at the heart of digital strategy.</p>
+                </div>
+                <div class="mission-list col-md-3">
+                    <img src="/img/Analyze.png" alt="">
+                    <h4>Analyze</h4>
+                    <p>Embracing the power of analytics to understand customers and provide better experience.</p>
+                </div>
             </div>
-            <div class="mission-list col-md-3">
-                <img src="/img/Transform.png" alt="">
-                <h4>Transform</h4>
-                <p>Integrating systems and transforming data to provide deep context for the business.</p>
+            <div class="row row-divider">
             </div>
-            <div class="mission-list col-md-3">
-                <img src="/img/Store.png" alt="">
-                <h4>Store</h4>
-                <p>Scaling up businesses by using advanced technologies placing data at the heart of digital strategy.</p>
-            </div>
-            <div class="mission-list col-md-3">
-                <img src="/img/Analyze.png" alt="">
-                <h4>Analyze</h4>
-                <p>Embracing the power of analytics to understand customers and provide better experience.</p>
+            <div class="row">
+                <div class="txtVision col-md-6">
+                    <h3>Our Vision</h3>
+                    <p style="font-weight: 500;">Together, we build an engaged future.</p>
+                        <br>
+                        <p style="font-weight: 200;">Taking business operations to a different level and streamlining business processes to achieve more effective results. Creating new platforms for greater interaction aligns the people, technology, and strategy as a result.
+                        <br><br>
+                        We change how businesses interacts with customers and partners and build a social community around.</p>
+                </div>
+                <div class="imgVision col-md-6">
+                    <img src="img/vision.png" alt="">
+                </div>
             </div>
         </div>
     </section>
+    <div class="wwd-container">
+        <section class="parallax row">
+            <div class="col-md-10"><h3>Want to be a part of the team?</h3></div>
+            <button class="col-md-2">We're Hiring</button>
+        </section>
+    </div>
+    <section id="solutionsID">
+        <div class="wwd-container-2">
+            <header class="wwd-header">
+                <h3>What we do</h3>
+                <p>Solving business challenges through our digital journey guiding pillars.</p>
+            </header>
+            <main class="wwd row">
+                <div class="grid-item-wwd col-5">
+                    <img src="/img/Digital-Presence.png" alt="">
+                    <h4>Digital Presence</h4>
+                    <p>Building brands through great user experience and data-driven strategy.</p>
+                </div>
+                <div class="grid-item-wwd col-5">
+                    <img src="/img/web_mobile_tech.png" alt="">
+                    <h4>Web & Mobile Technology</h4>
+                    <p>Managing and developing software solutions from end to end.</p>
+                </div>  
+                <div class="grid-item-wwd col-5">
+                    <img src="/img/It_services_Infra.png" alt="">
+                    <h4>IT Services & Infrastructure.</h4>
+                    <p>Building the foundation of a smart office</p>
+                </div>
+                <div class="grid-item-wwd col-5">
+                    <img src="/img/Analytics.png" alt="">
+                    <h4>System Integration & Analytics</h4>
+                    <p>ransforming data to drive businesses to the next wave of productivity and growth.</p>
+                </div>
+        </div>
+        <section id="container-solutions">
+            <div>
+                <header class="header-solutions">
+                    <h3>Solutions</h3>
+                    <p>Our Projects</p>
+                    <div class="text-section-sol">
+                        <p>We create & craft projects that ooze creativity in every aspect. We try to create a benchmark in everything we do.</p>
+                        <p>Take a moment to browse through some of our recent completed work</p>
+                    </div>
+                </header>
+                <main>
+                    
+                </main>
+            </div>
+        </section>
+        <section id="customersID" style="background: #F5FDFF;">
+            <div class="container-fluid-customer" style="padding-top: 80px">
+                <header class="header-customer">
+                    <h3 style="font-size: 33px; font-weight: 700;">What Our Clients Say</h3>
+                    <p style="font-size: 14.4px;">We empower businesses to grow every day.</p>
+                </header>
+                <div class="row customer-cols">
+                    <div class="col lg-1"></div>
+                    <div class="col lg-5">
+                        <div class="customer-col">
+                            <div class="quote-icon text-left">
+                                <img src="/img/quote-icon.png" style="height: 60px; height: 60px;" alt="">
+                            </div>
+                            <p style="text-align: left;">The suites of applications OPS developed for Unilever Food Solutions has definitely made us proud which I will highly recommend to anyone who needs a digital solution in improving the operations processes in achieving long term goals.</p>
+                        </div>
+                        <div class="quote-client">
 
-  </main>
-    </header>
-    
+                        </div>
+                    </div>
+                    <div class="col lg-5">
+                        <div class="customer-col">
+                            <div class="quote-icon text-left">
+                                <img src="/img/quote-icon.png" style="height: 60px; height: 60px;" alt="">
+                            </div>
+                            <p style="text-align: left;">OPS provides cost effective IT solutions and always listen to our needs. They also provide excellent and responsive after-sales service. It has been a pleasure working with them and we’ll continue to do so in the foreseeable future!</p>
+                        </div>
+                    </div>
+                    <div class="col lg-1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="partners-container">
+            <header class="header-solutions">
+                <h3>Customers & Partners</h3>
+            </header>
+                <div class="carousel-wrap">
+                    <div class="owl-carousel">
+                        <div class="item1"><img src="img/ricoh.png"></div>
+                        <div class="item1"><img src="img/gentech.jpg"></div>
+                        <div class="item1"><img src="img/multiplex.jpg"></div>
+                        <div class="item1"><img src="img/opentext.png"></div>
+                        <div class="item1"><img src="img/couchbase.png"></div>
+                        <div class="item1"><img src="img/akamai.png"></div>
+                        <div class="item1"><img src="img/unilever.png"></div>
+                        <div class="item1"><img src="img/suites.png"></div>
+                        <div class="item1"><img src="img/Splunk.png"></div>
+                    </div>
+            </div>
+        </section>
+        <section class="instant-quote">
+            <div class="container-text-quote text-center">
+            <h3 style="font-size: 29px; color: white; ">Like our Services? Get an <a href="" class="btn">Instant Quote</a></h3>
+            </div>
+        </section>
+        <section id="contactID">
+            <div>
+                <header class="header-solutions">
+                    <h3 >Contact Us</h3 >
+                </header>
+            </div>
+            
+            <div class="row contact-col">
+                <div class="col md-1"></div>
+                <div class="col md-4">
+                    <ul>
+                        <li class="contact-lists">
+                            <span>Address</span>
+                            <p>
+                                    Singapore :
+                                    116 Changi Road, #03-11, <br>
+                                    WIS@Changi, Singapore 419718
+                                    <br>
+                                    <br>
+                                    Philippines : Carolina Center #204 - 207, <br>
+                                    213 Sta Rosa - Tagaytay Road Silang,<br>
+                                    Cavite, Philippines 4118
+                                    <br>
+                                    <br>
+                                    Malaysia : Office Productivity <br>
+                                    Solution Sdn Bhd. <br>
+                                    33-1 Menara Keck Seng,<br>
+                                    203 Jalan Bukit Bintang,<br>
+                                    Bukit Bintang, 55100 Kuala Lumpur.
+                            </p>
+                        </li>
+                        <li class="contact-lists">
+                            <span>Email</span>
+                            <p>
+                                sales@opsolutions.biz
+                            </p>
+                        </li>
+                        <li class="custom-lists">
+                            <span>Phone</span>
+                            <p>
+                                     Singapore: +65 6440 0874
+                                <br> Philippines: +63 (946) 404-8010
+                                <br> Malaysia: +603 - 21499334
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+
+
+
+<footer class="bg-ops">
+    <div class="container p-custom-footer">
+        <div class="copyright-content">
+            <strong>OPSOLUTIONS</strong>
+            <span>&copy;</span>
+            <span>2019 All Rights Reserved by OPSOLUTIONS</span>
+        </div>
+    </div>
+</footer>
+</main>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="/js/owlCarousel.js"></script> -->
+
 </html>
